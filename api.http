@@ -1,0 +1,56 @@
+### Base URL
+@baseUrl = http://localhost:3000
+
+### =====================
+### App Controller
+### =====================
+
+### Get Hello
+GET {{baseUrl}}
+
+### =====================
+### Users - CRUD Operations
+### =====================
+
+### Create User 1
+POST {{baseUrl}}/users
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "john@example.com",
+  "password": "password123",
+  "age": 25
+}
+
+### Create User 2
+POST {{baseUrl}}/users
+Content-Type: application/json
+
+{
+  "name": "Jane Smith",
+  "email": "jane@example.com",
+  "password": "secret456",
+  "age": 30
+}
+
+### Get All Users
+GET {{baseUrl}}/users
+
+### Get User by ID
+GET {{baseUrl}}/users/1
+
+### Update User
+PATCH {{baseUrl}}/users/1
+Content-Type: application/json
+
+{
+  "name": "John Updated",
+  "age": 26
+}
+
+### Delete User
+DELETE {{baseUrl}}/users/1
+
+### Get User (should return 404 after delete)
+GET {{baseUrl}}/users/1
