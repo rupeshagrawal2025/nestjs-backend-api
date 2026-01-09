@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quick Quote - HiFi - Carbon DS</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="quick-quote.css">
+  
+  <style>
+    /* Fallback for DS Indigo font - using Inter as substitute */
+    @font-face {
+      font-family: 'DS Indigo';
+      src: local('Inter');
+      font-weight: 400;
+    }
+    @font-face {
+      font-family: 'DS Indigo';
+      src: local('Inter');
+      font-weight: 500;
+    }
+    @font-face {
+      font-family: 'DS Indigo';
+      src: local('Inter');
+      font-weight: 600;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #1a1a2e;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Quick Quote Thumbnail -->
+  <div class="quick-quote-thumbnail">
+    <div class="quick-quote-cover">
+      
+      <!-- Content Card -->
+      <div class="quick-quote-content">
+        
+        <!-- Main Content -->
+        <div class="quick-quote-main">
+          
+          <!-- Info Section -->
+          <div class="quick-quote-info">
+            
+            <!-- File Type Badge -->
+            <div class="file-type-badge">
+              <span>Share</span>
+            </div>
+            
+            <!-- Squad Name -->
+            <div class="squad-name">
+              DTS Design Projects
+            </div>
+            
+            <!-- Feature Title -->
+            <h1 class="feature-title">
+              Quick Quote<br>Using Carbon DS
+            </h1>
+            
+            <!-- Contact Section -->
+            <div class="contact-section">
+              <div class="contact-avatar">
+                <!-- Person Icon -->
+                <svg viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="18.5" cy="10" r="8" fill="white"/>
+                  <path d="M3 32C3 24.268 9.268 18 17 18H20C27.732 18 34 24.268 34 32V37H3V32Z" fill="white"/>
+                </svg>
+              </div>
+              <span class="contact-name">Parag, Yingjie</span>
+            </div>
+            
+          </div>
+          
+        </div>
+        
+        <!-- Date Reference -->
+        <div class="date-reference">
+          2026 Q2
+        </div>
+        
+      </div>
+      
+      <!-- Vector Decoration -->
+      <div class="vector-decoration">
+        <img src="vector-decoration.svg" alt="Decoration" width="604" height="603">
+      </div>
+      
+      <!-- Background Image -->
+      <img 
+        src="quick-quote-background.png" 
+        alt="Quick Quote Preview" 
+        class="background-image"
+      >
+      
+      <!-- Bottom Bar -->
+      <div class="bottom-bar">
+        <img src="bottom-bar.svg" alt="Bottom Bar" width="1600" height="40">
+      </div>
+      
+    </div>
+  </div>
+
+</body>
+</html>
