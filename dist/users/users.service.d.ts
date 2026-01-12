@@ -4,10 +4,12 @@ import { User } from './entities/user.entity';
 export declare class UsersService {
     private users;
     private idCounter;
-    create(createUserDto: CreateUserDto): User;
-    findAll(): User[];
-    findOne(id: number): User;
-    update(id: number, updateUserDto: UpdateUserDto): User;
+    private readonly SALT_ROUNDS;
+    create(createUserDto: CreateUserDto): Promise<Omit<User, 'password'>>;
+    findAll(): Omit<User, 'password'>[];
+    findOne(id: number): Omit<User, 'password'>;
+    findByEmail(email: string): User | undefined;
+    update(id: number, updateUserDto: UpdateUserDto): Promise<Omit<User, 'password'>>;
     remove(id: number): {
         message: string;
     };
